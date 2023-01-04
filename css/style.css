@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    padding-bottom: 50px;
+    position: relative;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jumbotron {
+    min-width: 100%;
+    padding: 1.5rem 0;
+    background-color: var(--bg);
+    border-bottom: var(--border-bottom);
+}
+
+.sub-title {
+    font-size: 1.7rem;
+    font-style: italic;
+}
+
+img {
+    background-color: var(--accent);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.25rem;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.tab-title {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    height: 50px;
+    background-color: var(--bg);
+    color: var(--text);
+    border: var(--border);
+    margin: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s;
+}
+  
+.btn:active, .btn:focus {
+    box-shadow: var(--box-shadow);
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active {
+    color: var(--color); 
+    background-color: var(--bg);
+}
+
+.tab-button {
+    display: flex;
+}
+
+.title, .price {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+/* --------------- Footer --------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+footer small {
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+
+/* 
+To see the light/dark mode effect: 
+In Windows operating system, go to Settings --> Personalization --> Colors --> choose or toggle between light and dark default app mode to see effect.
+*/
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: rgb(235, 239, 247);
+        --text: black;
+    }
+    .jumbotron {
+        --bg: rgb(183, 194, 204);
+    }
+    .btn {
+        --bg: rgb(96, 97, 97);
+        --text: white;
+        --border: 1px solid rgb(105, 105, 105);
+    }
+    .btn:hover { 
+        --bg: rgb(199, 207, 226);
+    }
+    .btn:active, .btn:focus {
+        --bg: rgb(199, 207, 226);
+        --box-shadow:  10px 5px 5px rgb(96, 97, 97);
+        --border: 1px solid rgb(199, 207, 226);
+    }
+    footer {
+        --bg: rgb(183, 194, 204);
+        --text: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: rgb(56, 55, 55);
+        --text: white;
+        --accent: rgb(231, 230, 230);
+        --box-shadow: 10px 10px 10px grey;
+    }
+    .jumbotron {
+        --border-bottom: 1px solid whitesmoke;
+    }
+    .btn {
+        --bg: rgb(199, 207, 226);
+        --text: black;
+        --border: 1px solid rgb(199, 207, 226);
+        --box-shadow:  0px 0px 2px rgb(199, 207, 226);
+    }
+    .btn:hover { 
+        --bg: rgb(88, 88, 88);
+    }
+    .btn:active, .btn:focus {
+        --bg: rgb(88, 88, 88);
+        --text: black;
+        --box-shadow:  10px 5px 5px rgb(199, 207, 226);
+        --border: 1px solid rgb(199, 207, 226);
+    }
+    footer {
+        --bg: rgb(70, 69, 69);
+        --text: white;
+    }
+}
