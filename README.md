@@ -14,7 +14,7 @@ The minimalist design helps to accentuate the main feature of this webpage: a li
 
 Light Mode                 |  Dark Mode
 :-------------------------:|:-------------------------:
-<img src="https://gitlab.com/junmian/car-collection/-/raw/main/img/light-mode.jpg" alt="Light Mode" title="Light Mode" target="_blank"> | <img src="https://gitlab.com/junmian/car-collection/-/raw/main/img/dark-mode.jpg" alt="Dark Mode" title="Dark Mode" target="_blank">
+<img src="https://github.com/junmian/car-collection/blob/main/img/light-mode.jpg" alt="Light Mode" title="Light Mode" target="_blank"> | <img src="https://github.com/junmian/car-collection/blob/main/img/dark-mode.jpg" alt="Dark Mode" title="Dark Mode" target="_blank">
 
 ## Accessibility
 The webpage is designed and coded to be WCAG 2.0 Level AA compliant. Text contrast also meets Level AAA. I used a web accessibility evaluation tool to double check my work for accuracy.
